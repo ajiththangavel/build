@@ -29,6 +29,9 @@ PRODUCT_PACKAGES += \
     servicemanager.recovery \
     shell_and_utilities_recovery \
     watchdogd.recovery \
+    android.hardware.carsenze \
+    android.hardware.carsenze-service \
+    Carsenze
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.recovery.usb.vid?=18D1 \
@@ -105,3 +108,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     adb_debug.prop \
     userdebug_plat_sepolicy.cil
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST+= \
+    system/app/Carsenze/%
